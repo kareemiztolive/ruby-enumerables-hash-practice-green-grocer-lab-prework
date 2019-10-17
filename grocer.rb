@@ -12,7 +12,7 @@ def consolidate_cart(cart)
   output
 end
 
-
+def apply_coupons(cart, coupons)
 coupons.each do |coupon|
     if cart.keys.include? coupon[:item]
       if cart[coupon[:item]][:count] >= coupon[:num]
